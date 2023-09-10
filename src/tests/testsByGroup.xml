@@ -1,0 +1,33 @@
+
+<test name="Priority">
+  <groups>
+    <run>
+      <include name="tests1"  />
+    </run>
+  </groups>
+  
+  <classes>
+    <class name="Test1">
+      <methods>
+        <include name="createAccount" />
+        <include name="cannot_Sign_Up_Without_Mandatory_Fields" />
+      </methods>
+    </class>
+    
+    <class name="Test2">
+      <methods>
+        <include name="createAccount" />
+        <include name="create_Contact" />
+        <include name="deleteContact"/>
+      </methods>
+    </class>
+    
+    <class name="Test3">
+      <methods>
+        <include name="create_Contact" />
+        <include name="cannotCreateContactWithoutMandatoryFields" />
+        <include name="deleteContact"/>
+      </methods>
+    </class>
+  </classes>
+</test>
